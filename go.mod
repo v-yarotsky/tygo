@@ -1,4 +1,4 @@
-module github.com/gzuidhof/tygo
+module github.com/v-yarotsky/tygo
 
 go 1.18
 

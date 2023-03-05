@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/gzuidhof/tygo/config"
-	"github.com/gzuidhof/tygo/tygo"
 	"github.com/spf13/cobra"
+	"github.com/v-yarotsky/tygo/config"
+	"github.com/v-yarotsky/tygo/tygo"
 )
 
 func Execute() {

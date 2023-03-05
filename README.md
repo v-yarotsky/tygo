@@ -10,9 +10,9 @@ It preserves comments, understands constants and also supports non-struct `type`
 
 ```shell
 # Go >= 1.17
-go install github.com/gzuidhof/tygo@latest
+go install github.com/v-yarotsky/tygo@latest
 # Go < 1.17:
-go install github.com/gzuidhof/tygo
+go install github.com/v-yarotsky/tygo
 ```
 
 ## Example
@@ -95,7 +95,7 @@ export interface ListUsersResponse {
 }
 ```
 
-For a real baptism by fire example, [here is a Gist with output for the Go built-in `net/http` and `time` package](https://gist.github.com/gzuidhof/7e192a2f33d8a4f5bde5b77fb2c5048c).
+For a real baptism by fire example, [here is a Gist with output for the Go built-in `net/http` and `time` package](https://gist.github.com/v-yarotsky/7e192a2f33d8a4f5bde5b77fb2c5048c).
 
 ## Usage
 
@@ -105,7 +105,7 @@ Create a file `tygo.yaml` in which you specify which packages are to be converte
 
 ```yaml
 packages:
-  - path: "github.com/gzuidhof/tygo/examples/bookstore"
+  - path: "github.com/v-yarotsky/tygo/examples/bookstore"
     type_mappings:
       time.Time: "string /* RFC3339 */"
       null.String: "null | string"
@@ -128,7 +128,7 @@ The output Typescript file will be next to the Go source files.
 config := &tygo.Config{
   Packages: []*tygo.PackageConfig{
       &tygo.PackageConfig{
-          Path: "github.com/gzuidhof/tygo/examples/bookstore",
+          Path: "github.com/v-yarotsky/tygo/examples/bookstore",
       },
   },
 }
